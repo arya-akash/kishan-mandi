@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Kissan Mandi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Kissan Mandi Logo">
+                <span>Kissan Mandi</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="auth-wrapper">
+        <div class="auth-container register">
+            <div class="auth-header">
+                <h2>Register as Farmer</h2>
+                <p>Join our farming community today!</p>
+            </div>
+
+            <form action="register.php" method="POST" class="auth-form">
+                <div class="form-step active" data-step="1">
+                    <h3>Basic Information</h3>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="fullname" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                    </div>
+                    <button type="button" class="btn primary-btn next-step">Continue</button>
+                </div>
+
+                <div class="form-step" data-step="2">
+                    <h3>Farm Details</h3>
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" name="location" placeholder="Farm Location" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-ruler-combined"></i>
+                        <input type="number" name="farm_size" placeholder="Farm Size (in acres)" required>
+                    </div>
+                    <div class="farmer-type">
+                        <p>Farmer Type:</p>
+                        <div class="radio-group">
+                            <label class="radio-container">
+                                <input type="radio" name="farmer_type" value="individual" required>
+                                <span class="radio-checkmark"></span>
+                                Individual Farmer
+                            </label>
+                            <label class="radio-container">
+                                <input type="radio" name="farmer_type" value="cooperative" required>
+                                <span class="radio-checkmark"></span>
+                                Cooperative Member
+                            </label>
+                        </div>
+                    </div>
+                    <div class="step-buttons">
+                        <button type="button" class="btn secondary-btn prev-step">Back</button>
+                        <button type="button" class="btn primary-btn next-step">Continue</button>
+                    </div>
+                </div>
+
+                <div class="form-step" data-step="3">
+                    <h3>Security</h3>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" placeholder="Create Password" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+                    <div class="terms-container">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="terms.html" class="highlight">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <div class="step-buttons">
+                        <button type="button" class="btn secondary-btn prev-step">Back</button>
+                        <button type="submit" class="btn primary-btn">
+                            <span>Create Account</span>
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html" class="highlight">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

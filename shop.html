@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Kissan Mandi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop-styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Kissan Mandi Logo">
+            <span>Kissan Mandi</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="market-prices.html">Market Prices</a>
+            <a href="community.html">Community</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <button class="login-btn">Login/Register</button>
+    </nav>
+
+    <a href="index.html" class="back-home">
+        <i class="fas fa-home"></i>
+        <span>Back to Home</span>
+    </a>
+
+    <!-- Shop Header -->
+    <header class="shop-header">
+        <h1>Agricultural Shop</h1>
+        <div class="shop-filters">
+            <select name="category" id="category">
+                <option value="">All Categories</option>
+                <option value="seeds">Seeds</option>
+                <option value="tools">Tools</option>
+                <option value="fertilizers">Fertilizers</option>
+                <option value="pesticides">Pesticides</option>
+                <option value="machinery">Machinery</option>
+            </select>
+            <input type="search" placeholder="Search products...">
+        </div>
+    </header>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="category-container">
+            <!-- Seeds Section -->
+            <h2>Seeds</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1675237626149-fce9de683a7a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fHdoZWF0JTIwc2VlZHxlbnwwfHwwfHx8MA%3D%3D" alt="Wheat Seeds">
+                    <h3>Premium Wheat Seeds</h3>
+                    <p>High-yield wheat variety</p>
+                    <span class="price">₹200/kg</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1674654419403-1a80edb26881?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGJhc21hdGklMjByaWNlfGVufDB8fDB8fHww" alt="Rice Seeds">
+                    <h3>Basmati Rice Seeds</h3>
+                    <p>Premium quality rice seeds</p>
+                    <span class="price">₹180/kg</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1605289782758-39ff5accb423?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fGNvdHRvbiUyMHNlZWR8ZW58MHx8MHx8fDA%3D" alt="Cotton Seeds">
+                    <h3>BT Cotton Seeds</h3>
+                    <p>Disease-resistant cotton variety</p>
+                    <span class="price">₹750/packet</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1641912593355-134c57c76246?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvcm4lMjBzZWVkfGVufDB8fDB8fHww" alt="Corn Seeds">
+                    <h3>Hybrid Corn Seeds</h3>
+                    <p>High-yielding maize variety</p>
+                    <span class="price">₹450/packet</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1545165311-508ed0c91361?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fHZlZ2V0YWJsZSUyMHNlZWR8ZW58MHx8MHx8fDA%3D" alt="Vegetable Seeds">
+                    <h3>Vegetable Seed Kit</h3>
+                    <p>Assorted vegetable seeds</p>
+                    <span class="price">₹299/kit</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Basic Tools Section -->
+            <h2>Basic Farming Tools</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1531873252757-8c22fa9e7a98?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlZWwlMjBzcGFkZXxlbnwwfHwwfHx8MA%3D%3D" alt="Spade">
+                    <h3>Steel Spade</h3>
+                    <p>Heavy-duty farming spade</p>
+                    <span class="price">₹599</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592081398099-a011c4367b7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2lja2xlfGVufDB8fDB8fHww" alt="Sickle">
+                    <h3>Harvesting Sickle</h3>
+                    <p>Sharp steel blade sickle</p>
+                    <span class="price">₹299</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1723903565494-22d0d9f3b051?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHJha2V8ZW58MHx8MHx8fDA%3D" alt="Garden Rake">
+                    <h3>Garden Rake</h3>
+                    <p>14-teeth garden rake</p>
+                    <span class="price">₹450</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1678725714126-c7c1e8c343a8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fFByb2Zlc3Npb25hbCUyMGdhcmRlbiUyMHNjaXNzb3JzfGVufDB8fDB8fHww" alt="Pruning Shears">
+                    <h3>Pruning Shears</h3>
+                    <p>Professional garden scissors</p>
+                    <span class="price">₹350</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Advanced Equipment -->
+            <h2>Advanced Farming Equipment</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1614977645540-7abd88ba8e56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhY3RvcnxlbnwwfHwwfHx8MA%3D%3D " alt="Mini Tractor">
+                    <h3>Mini Tractor</h3>
+                    <p>Compact and efficient</p>
+                    <span class="price">₹250,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://5.imimg.com/data5/ANDROID/Default/2021/7/JG/FT/AT/12261627/product-jpeg.jpg" alt="Rotavator">
+                    <h3>Power Rotavator</h3>
+                    <p>Soil cultivation equipment</p>
+                    <span class="price">₹75,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZJo01EfXJWPhCTSJI-feCJJ7bPn9RdA9OCg&s" alt="Seed Drill">
+                    <h3>Automatic Seed Drill</h3>
+                    <p>Precise seed placement</p>
+                    <span class="price">₹45,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/301328017/XD/SS/QC/532026/01-copy.jpg" alt="Mini Harvester">
+                    <h3>Mini Harvester</h3>
+                    <p>Efficient crop harvesting</p>
+                    <span class="price">₹180,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Fertilizers and Soil Care -->
+            <h2>Fertilizers and Soil Care</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://casadeamor.in/cdn/shop/files/1.png?v=1685438879&width=1445" alt="NPK Fertilizer">
+                    <h3>NPK Fertilizer</h3>
+                    <p>Balanced nutrition (15-15-15)</p>
+                    <span class="price">₹1,200/bag</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://cdn.mos.cms.futurecdn.net/kiGsiqH2GtdPfnW7Wh6bUL-415-80.jpg" alt="Vermicompost">
+                    <h3>Vermicompost</h3>
+                    <p>Organic soil enrichment</p>
+                    <span class="price">₹400/bag</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7JqZWvK1mQlESZYUI_u_wk9ng7R9Q6OL7OA&s" alt="Soil Conditioner">
+                    <h3>Soil Conditioner</h3>
+                    <p>Improves soil structure</p>
+                    <span class="price">₹850/bag</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/IL/AJ/HT/25464873/mix-micronutrient-powder.jpg" alt="Micronutrients">
+                    <h3>Micronutrient Mix</h3>
+                    <p>Essential trace elements</p>
+                    <span class="price">₹550/kg</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Irrigation Systems -->
+            <h2>Irrigation Systems</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/drip-system.jpg" alt="Drip Irrigation">
+                    <h3>Drip Irrigation Kit</h3>
+                    <p>Water-efficient irrigation</p>
+                    <span class="price">₹8,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/sprinkler.jpg" alt="Sprinkler System">
+                    <h3>Sprinkler System</h3>
+                    <p>Wide coverage irrigation</p>
+                    <span class="price">₹4,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/water-pump.jpg" alt="Water Pump">
+                    <h3>Agricultural Water Pump</h3>
+                    <p>High-capacity water pump</p>
+                    <span class="price">₹15,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/timer.jpg" alt="Irrigation Timer">
+                    <h3>Smart Irrigation Timer</h3>
+                    <p>Automated watering control</p>
+                    <span class="price">₹2,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Plant Protection -->
+            <h2>Plant Protection</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/pesticide.jpg" alt="Organic Pesticide">
+                    <h3>Organic Pesticide</h3>
+                    <p>Natural pest control</p>
+                    <span class="price">₹450/L</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/fungicide.jpg" alt="Fungicide">
+                    <h3>Fungicide Solution</h3>
+                    <p>Prevents fungal diseases</p>
+                    <span class="price">₹380/L</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/netting.jpg" alt="Bird Netting">
+                    <h3>Bird Protection Net</h3>
+                    <p>Crop protection netting</p>
+                    <span class="price">₹2,500/roll</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/weedicide.jpg" alt="Weedicide">
+                    <h3>Weed Control Solution</h3>
+                    <p>Effective weed management</p>
+                    <span class="price">₹420/L</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Smart Farming -->
+            <h2>Smart Farming Technology</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/soil-sensor.jpg" alt="Soil Sensor">
+                    <h3>Smart Soil Sensor</h3>
+                    <p>Real-time soil monitoring</p>
+                    <span class="price">₹4,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/weather-station.jpg" alt="Weather Station">
+                    <h3>Mini Weather Station</h3>
+                    <p>Local weather monitoring</p>
+                    <span class="price">₹12,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/drone.jpg" alt="Agricultural Drone">
+                    <h3>Farming Drone</h3>
+                    <p>Crop monitoring & spraying</p>
+                    <span class="price">₹85,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/mobile-app.jpg" alt="Farm Management App">
+                    <h3>Farm Management App</h3>
+                    <p>Digital farm management</p>
+                    <span class="price">₹1,999/year</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div class="cart-sidebar">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span class="total-amount">₹0</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@kissanmandi.com</p>
+                <p>Phone: 1800-FARMER-HELP</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="shop.html">Shop</a>
+                <a href="market-prices.html">Market Prices</a>
+                <a href="weather.html">Weather Updates</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

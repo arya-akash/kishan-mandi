@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Prices - Kissan Mandi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="market-styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Kissan Mandi Logo">
+            <span>Kissan Mandi</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="market-prices.html" class="active">Market Prices</a>
+            <a href="community.html">Community</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <button class="login-btn">Login/Register</button>
+    </nav>
+
+    <a href="index.html" class="back-home">
+        <i class="fas fa-home"></i>
+        <span>Back to Home</span>
+    </a>
+
+    <!-- Market Header -->
+    <header class="market-header">
+        <h1>Market Price Information</h1>
+        <div class="market-filters">
+            <select name="state" id="state">
+                <option value="">Select State</option>
+                <option value="punjab">Punjab</option>
+                <option value="haryana">Haryana</option>
+                <option value="up">Uttar Pradesh</option>
+                <option value="mp">Madhya Pradesh</option>
+            </select>
+            <select name="market" id="market">
+                <option value="">Select Market</option>
+            </select>
+            <input type="date" id="date">
+        </div>
+    </header>
+
+    <!-- Price Dashboard -->
+    <section class="price-dashboard">
+        <div class="price-summary">
+            <div class="summary-card trending-up">
+                <h3>Top Gainer</h3>
+                <div class="crop-info">
+                    <span class="crop-name">Wheat</span>
+                    <span class="price-change">+4.5%</span>
+                    <span class="current-price">₹2,450/quintal</span>
+                </div>
+            </div>
+            <div class="summary-card trending-down">
+                <h3>Top Decliner</h3>
+                <div class="crop-info">
+                    <span class="crop-name">Potato</span>
+                    <span class="price-change">-2.8%</span>
+                    <span class="current-price">₹1,200/quintal</span>
+                </div>
+            </div>
+            <div class="summary-card">
+                <h3>Market Status</h3>
+                <div class="market-status">
+                    <span class="status-indicator active"></span>
+                    <span>Market Open</span>
+                    <span class="time">09:00 AM - 06:00 PM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Price Table -->
+        <div class="price-table-container">
+            <div class="table-filters">
+                <input type="text" placeholder="Search crops...">
+                <select name="category">
+                    <option value="">All Categories</option>
+                    <option value="cereals">Cereals</option>
+                    <option value="pulses">Pulses</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="fruits">Fruits</option>
+                </select>
+            </div>
+            
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Commodity</th>
+                        <th>Variety</th>
+                        <th>Min Price</th>
+                        <th>Max Price</th>
+                        <th>Modal Price</th>
+                        <th>Change</th>
+                        <th>Market</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Price Trends -->
+        <div class="price-trends">
+            <h2>Price Trends</h2>
+            <div class="trend-charts">
+                <div class="chart-container">
+                    <h3>Weekly Price Trend</h3>
+                    <div class="chart" id="weeklyChart">
+                        <!-- Chart will be rendered here -->
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Monthly Comparison</h3>
+                    <div class="chart" id="monthlyChart">
+                        <!-- Chart will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Market Insights -->
+        <div class="market-insights">
+            <h2>Market Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>Price Forecast</h3>
+                    <p>Based on current trends, wheat prices are expected to rise by 5-7% in the next month.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="insight-card">
+                    <h3>Market News</h3>
+                    <ul class="news-list">
+                        <li>Government announces new MSP for Rabi crops</li>
+                        <li>Rainfall forecast may affect vegetable prices</li>
+                        <li>Export demand driving pulse prices higher</li>
+                    </ul>
+                </div>
+                <div class="insight-card">
+                    <h3>Trading Tips</h3>
+                    <ul class="tips-list">
+                        <li>Best time to sell: Morning hours</li>
+                        <li>Check multiple markets for best prices</li>
+                        <li>Monitor weather forecasts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@kissanmandi.com</p>
+                <p>Phone: 1800-FARMER-HELP</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="shop.html">Shop</a>
+                <a href="market-prices.html">Market Prices</a>
+                <a href="weather.html">Weather Updates</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="market-prices.js"></script>
+</body>
+</html> 
